@@ -67,7 +67,7 @@ body {
 
 .section-description {
   font-size: 22px;
-  line-height: 36px;
+  line-height: 26px;
 }
 
 /*advantages*/
@@ -107,6 +107,10 @@ body {
   color: #ffffff;
 }
 
+.advantages-text {
+  line-height: 21px;
+}
+
 
 /*catalog common*/
 
@@ -134,7 +138,76 @@ body {
   line-height: 26px;
 }
 
-.subscribe {
+.filter-reset {
+  color:#FFFFFF;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.range-input {
+  color: #ffffff;
+  background-color: transparent;
+
+  font-family: inherit;
+  font-size: 18px;
+}
+
+.range-title {
+  opacity: 0.3;
+}
+
+/*subscribe*/
+
+.subscribe-index .section-title {
+  color: #ffffff;
+}
+
+.subscribe-index {
+  color: #ffffff;
+  background-color: #83B3D3;
   background-image: url("../img/background/subscribe.jpg");
   background-size: cover;
+}
+
+/*card*/
+
+.card-title {
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.card-link {
+  color:#000000;
+
+  text-decoration: none;
+}
+
+.card-rate {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  color: #FFFFFF;
+  background-color: #83B3D3;
+
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.subscribe-input {
+  font-family: inherit;
+  font-size: 18px;
+
+  background-color: #F2F2F2;
+}
+
+.footer-phone {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
 }
