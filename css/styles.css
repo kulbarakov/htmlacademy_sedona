@@ -147,7 +147,13 @@
   text-align: center;
 }
 
+.catalog {
+  padding: 0 72px;
+}
+
 .catalog-header {
+  padding: 35px 72px 80px;
+
   color:#ffffff;
   background-color: #83B3D3;
   background-image: url("../img/background/filter.jpg");
@@ -157,13 +163,24 @@
 .catalog-title {
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .catalog-navigation {
   font-size: 16px;
+  padding: 0;
+  margin: 0;
 }
 
-/*filter*/
+.catalog-navigation-list {
+  padding: 0;
+  margin: 0;
+}
+
+.catalog-sort {
+  display: flex;
+  justify-content: space-between;
+}
 
 .filter-title {
   font-weight: 700;
@@ -177,6 +194,34 @@
 
   font-family: inherit;
   font-size: 18px;
+}
+
+.filter-form {
+  display: flex;
+}
+
+.filter-list {
+  padding: 0;
+  margin: 0;
+}
+
+.filter-fieldset {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  margin-right: 17px;
+}
+
+.filter-fieldset-price {
+  width: 287px;
+  margin-left: 95px;
+}
+
+.filter-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  margin-left: 64px;
 }
 
 .range-input {
