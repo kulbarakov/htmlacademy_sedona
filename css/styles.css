@@ -147,11 +147,7 @@
   text-align: center;
 }
 
-.catalog {
-  padding: 0 72px;
-}
-
-.catalog-header {
+.main-header {
   padding: 35px 72px 80px;
 
   color:#ffffff;
@@ -160,26 +156,45 @@
   background-size: cover;
 }
 
-.catalog-title {
+.main-heading {
   font-size: 60px;
   line-height: 78px;
   margin: 0;
 }
 
-.catalog-navigation {
+.breadcrumbs {
   font-size: 16px;
   padding: 0;
   margin: 0;
 }
 
-.catalog-navigation-list {
+.breadcrumbs-list {
   padding: 0;
   margin: 0;
+}
+
+.catalog {
+  padding: 0 72px;
 }
 
 .catalog-sort {
   display: flex;
   justify-content: space-between;
+}
+
+.catalog-title {
+  width: 50%;
+  margin: 0;
+}
+
+.catalog-select {
+  width: 287;
+  margin-right: auto;
+}
+
+.view {
+  margin: 0;
+  padding: 0;
 }
 
 .filter-title {
@@ -267,6 +282,21 @@
 .card-rate {
   font-size: 16px;
   text-transform: uppercase;
+}
+
+.pagination-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-select {
+  display: flex;
 }
 
 .pagination-link {
