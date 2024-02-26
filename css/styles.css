@@ -52,8 +52,12 @@
 }
 
 .button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
   color: #ffffff;
   background-color: #756257;
+  text-align: center;
 
   font-family: inherit;
   font-weight: 700;
@@ -78,6 +82,7 @@
 
 .navigation-list {
   display: flex;
+  flex-grow: 1;
   flex-wrap: wrap;
   font-size: 20px;
   line-height: 26px;
@@ -100,6 +105,16 @@
   flex-wrap: wrap;
 
   align-items: center;
+}
+
+.additional-menu .icon-button {
+  min-width: 42px;
+  min-height: 42px;
+
+}
+
+.additional-menu .button {
+  width: 160px;
 }
 
 /*section*/
@@ -125,6 +140,8 @@
 .advantages-list {
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .advantages-list-inner {
@@ -195,6 +212,8 @@
 .breadcrumbs-list {
   padding: 0;
   margin: 0;
+
+  list-style-type: none;
 }
 
 .catalog {
@@ -219,6 +238,8 @@
 .view {
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .filter-title {
@@ -242,6 +263,8 @@
 .filter-list {
   padding: 0;
   margin: 0;
+
+  list-style-type: none;
 }
 
 .filter-fieldset {
@@ -317,6 +340,8 @@
   display: flex;
   margin: 0;
   padding: 0;
+
+  list-style-type: none;
 }
 
 .pagination-select {
@@ -342,6 +367,10 @@
 .social-list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+
+  list-style-type: none;
 }
 
 .page-footer {
