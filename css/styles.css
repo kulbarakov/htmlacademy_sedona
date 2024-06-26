@@ -275,20 +275,13 @@
 }
 
 .catalog-sort {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 287px max-content;
   padding: 44px 0;
 }
 
 .catalog-title {
-  width: 50%;
   margin: 0;
-}
-
-.catalog-select {
-  width: 287px;
-  margin-right: auto;
 }
 
 .view {
@@ -327,7 +320,10 @@
 }
 
 .filter-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 200px 200px 1fr 223px;
+  gap: 17px;
+  justify-content: space-between;
 }
 
 .filter-list {
@@ -340,20 +336,16 @@
 .filter-fieldset {
   margin: 0;
   padding: 0;
-  width: 200px;
-  margin-right: 17px;
 }
 
 .filter-fieldset-price {
-  width: 287px;
-  margin-left: 95px;
+  margin-left: 96px;
 }
 
 .filter-buttons {
   display: flex;
   flex-direction: column;
-  width: 160px;
-  margin-left: 64px;
+  margin-left: 80px;
 }
 
 .range-input {
@@ -392,9 +384,49 @@
 
 /*card*/
 
+.card-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 18px;
+  row-gap: 10px;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 26px 1fr;
+  grid-template-rows: 206px;
+  grid-template-areas:
+    "image image image"
+    "title title title"
+    "description description description"
+    "button-more . button-chosen"
+    "stars rate rate";
+  row-gap: 16px;
+  padding: 20px;
+}
+
+.card-img {
+  grid-area: image;
+  order: -1;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
 .card-title {
+  grid-area: title;
+  margin: 0;
   font-size: 24px;
   line-height: 31px;
+}
+
+.card-description {
+  grid-area: description;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 26px;
+  margin: 0;
 }
 
 .card-link {
@@ -403,16 +435,37 @@
   text-decoration: none;
 }
 
+.card-more {
+  grid-area: button-more;
+}
+
+.card-chosen {
+  grid-area: button-chosen;
+}
+
 .card-rate {
+  grid-area: rate;
+  margin: 0;
+
   font-size: 16px;
   text-transform: uppercase;
 }
 
+/* Pagination */
+
 .pagination {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 30px 0;
 }
 
+.pagination-button {
+  min-width: 620px;
+}
+
 .pagination-nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
